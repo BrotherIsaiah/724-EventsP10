@@ -8,8 +8,6 @@ import ModalEvent from "../ModalEvent";
 import "./style.css";
 
 const PER_PAGE = 9;
-console.log(PER_PAGE)
-
 const EventList = () => {
   const { data, error } = useData();
   const [type, setType] = useState();
@@ -32,12 +30,11 @@ const EventList = () => {
     setCurrentPage(1);
     setType(evtType);
   };
-  console.log(changeType)
-  console.log(setType)
+  
   const pageNumber = Math.floor((filteredEvents?.length || 0) / PER_PAGE) + 1;
-  console.log(pageNumber)
+  
   const typeList = new Set(data?.events.map((event) => event.type));
-  console.log(typeList)
+  
   return (
     <>
       {error && <div>An error occured</div>}
