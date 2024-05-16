@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { getMonth } from "../../helpers/Date";
 import "./style.scss";
-import { DataProvider, useData } from './DataProvider';
+
 
 const EventCard = ({
   imageSrc,
