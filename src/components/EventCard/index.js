@@ -38,7 +38,7 @@ EventCard.propTypes = {
 };
 
 EventCard.defaultProps = {
-  imageSrc: "images/alexandre-pellaes-6vAjp0pscX0-unsplash.png",
+  imageSrc: "images/`{imageSrc}`",
   imageAlt: "image",
   small: false,
 }
