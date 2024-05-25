@@ -24,7 +24,7 @@ const Slider = () => {
   });
   return (
     <div className="SlideCardList">
-      {byDateDesc?.map((event, idx) => (
+      {byDateDesc.map((event, idx) => (
         <>
           <div
             key={event.id}
@@ -38,6 +38,7 @@ const Slider = () => {
                 <h3>{event.title}</h3>
                 <p>{event.description}</p>
                 <div>{getMonth(new Date(event.date))}</div>
+                {console.log(new Date (event.date))}
               </div>
             </div>
           </div>
