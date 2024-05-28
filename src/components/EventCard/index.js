@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { getMonth } from "../../helpers/Date";
-import "./style.scss";
 
+import "./style.scss";
 
 const EventCard = ({
   imageSrc,
@@ -29,7 +29,7 @@ const EventCard = ({
   );
 
 EventCard.propTypes = {
-  imageSrc: PropTypes.string,
+  imageSrc: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
   date: PropTypes.instanceOf(Date).isRequired,
   title: PropTypes.string.isRequired,
@@ -38,7 +38,6 @@ EventCard.propTypes = {
 };
 
 EventCard.defaultProps = {
-  imageSrc: "images/`{imageSrc}`",
   imageAlt: "image",
   small: false,
 }
